@@ -1,3 +1,5 @@
+"use-client";
+
 import HomeSection from "../../components/Home/Home";
 import { Box } from "@mui/material";
 

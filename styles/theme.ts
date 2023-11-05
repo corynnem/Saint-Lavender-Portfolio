@@ -10,4 +10,5 @@ const theme = createTheme({
       main: green[500],
     },
   },
+  breakpoints: {},
 });

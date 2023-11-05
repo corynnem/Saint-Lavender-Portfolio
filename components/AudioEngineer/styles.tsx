@@ -1,7 +1,8 @@
-export const styles = {
-  container: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-};
+("use client");
+import { styled } from "@mui/system";
+
+export const Container = styled("div")({
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+});

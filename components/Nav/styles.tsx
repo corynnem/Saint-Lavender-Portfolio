@@ -19,5 +19,5 @@ export const NavContainer = styled("div")({
   justifyContent: "center",
   flexDirection: "column",
   alignItems: "center",
-  fontSize: "2rem",
+  fontSize: "2.5rem",
 });

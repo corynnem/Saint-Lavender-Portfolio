@@ -5,10 +5,11 @@
 
 .primaryFont {
   font-family: primary;
+  color: black;
 }
 
 body {
-  background-image: url("../../public/assets/stained-glass.png");
-  background-repeat: no-repeat;
-  background-size: "cover";
+  margin: 0 0 0 0;
+  height: "100%";
+  width: "100%";
 }

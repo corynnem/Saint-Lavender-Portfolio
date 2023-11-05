@@ -1,21 +1,29 @@
 import React from "react";
 import { Box } from "@mui/material";
-// import { styles } from "./styles";
+import Link from "next/link";
 import saintLavender from "../../public/assets/saint-lavender.png";
 import { PageContainer, Container, NavContainer } from "./styles";
 
 const Navbar = () => {
   return (
     <PageContainer>
-      <img src={saintLavender.src} style={{ width: "60%" }} />
+      <img src={saintLavender.src} style={{ width: "55%" }} />
       <Container>
         <NavContainer>
-          <Box className="primaryFont">singer songwriter</Box>
-          <Box className="primaryFont">poet</Box>
+          <Link href="/singer-songwriter" className="primaryFont">
+            singer songwriter
+          </Link>
+          <Link href="/poet" className="primaryFont">
+            poet
+          </Link>
         </NavContainer>
         <NavContainer>
-          <Box className="primaryFont">audio engineer</Box>
-          <Box className="primaryFont">artist</Box>
+          <Link href="/audio-engineer" className="primaryFont">
+            audio engineer
+          </Link>
+          <Link href="/artist" className="primaryFont">
+            artist
+          </Link>
         </NavContainer>
       </Container>
     </PageContainer>

@@ -1,27 +1,33 @@
+"use-client";
 import React from "react";
 import { Box } from "@mui/material";
 import Link from "next/link";
 import saintLavender from "../../public/assets/saint-lavender.png";
-import { PageContainer, Container, NavContainer } from "./styles";
+import {
+  PageContainer,
+  Container,
+  NavContainer,
+  StainedGlassContainer,
+} from "./styles";
 
 const Navbar = () => {
   return (
     <PageContainer>
-      <img src={saintLavender.src} style={{ width: "55%" }} />
+      <StainedGlassContainer src={saintLavender.src} />
       <Container>
         <NavContainer>
-          <Link href="/singer-songwriter" className="primaryFont">
+          <Link href="/singer-songwriter" className="baroqueFont">
             singer songwriter
           </Link>
-          <Link href="/poet" className="primaryFont">
+          <Link href="/poet" className="baroqueFont">
             poet
           </Link>
         </NavContainer>
         <NavContainer>
-          <Link href="/audio-engineer" className="primaryFont">
+          <Link href="/audio-engineer" className="baroqueFont">
             audio engineer
           </Link>
-          <Link href="/artist" className="primaryFont">
+          <Link href="/artist" className="baroqueFont">
             artist
           </Link>
         </NavContainer>

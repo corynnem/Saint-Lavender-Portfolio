@@ -1,11 +1,46 @@
 @font-face {
-  font-family: primary;
+  font-family: baroque;
   src: url("../../public/fonts/baroque.ttf");
 }
 
-.primaryFont {
-  font-family: primary;
-  color: black;
+@font-face {
+  font-family: msss;
+  src: url("../../public/fonts/micross.ttf");
+}
+
+/* find animation that wont mess with the rest of the page */
+@keyframes glitchy {
+  /* 0% {
+    margin-right: 5px;
+  }
+  25% {
+    margin-left: 5px;
+  }
+  50% {
+    margin-top: 5px;
+  }
+  75% {
+    margin-bottom: 5px;
+  }
+  100% {
+    margin-left: 5px;
+  } */
+}
+
+.glitchy {
+  z-index: 1000000;
+  animation: glitchy 1s infinite;
+}
+
+.baroqueFont {
+  font-family: baroque;
+  color: white;
+  text-shadow: 3px 3px 5px black;
+}
+
+.msssFont {
+  font-family: msss;
+  font-size: 1.5rem;
 }
 
 body {

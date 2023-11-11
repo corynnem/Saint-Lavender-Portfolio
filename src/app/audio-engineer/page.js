@@ -1,10 +1,11 @@
 import React from "react";
+import WindowsPage from "../../../components/AudioEngineer/WindowsPage";
 import { Box } from "@mui/material";
 
 const AudioEngineer = () => {
   return (
     <Box>
-      <div>Audio Engineer</div>
+      <WindowsPage />
     </Box>
   );
 };

@@ -1,6 +1,6 @@
-"use-client"
+"use-client";
 
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Container, BottomBar } from "./styles";
 import windowsIcon from "../../public/assets/start-button.png";
 import "./stylesFile.css";
@@ -373,7 +373,12 @@ const WindowsPage = () => {
               />
             </div>
             <div className="tab-box-content">
-              <input name="topics-radio" id="topic-1" type="radio" default />
+              <input
+                name="topics-radio"
+                id="topic-1"
+                type="radio"
+                defaultChecked
+              />
               <input name="topics-radio" id="topic-2" type="radio" />
               <input name="topics-radio" id="topic-3" type="radio" />
               <input name="topics-radio" id="topic-4" type="radio" />
@@ -450,10 +455,10 @@ const WindowsPage = () => {
                   <h2>Why can't I move windows?</h2>
                   <p>
                     Creating Windows in CSS is quite difficult, and requires a
-                    lot of input elements. TherehtmlFore, it may be recommended
-                    that you use another language if you wish to make a fully
-                    fledged operating system. Even so, it is a good way to
-                    demonstrate the <strong>power</strong> of CSS.
+                    lot of input elements. Therefore, it may be recommended that
+                    you use another language if you wish to make a fully fledged
+                    operating system. Even so, it is a good way to demonstrate
+                    the <strong>power</strong> of CSS.
                   </p>
                 </div>
                 <div className="topic-4-content">
@@ -531,7 +536,7 @@ const WindowsPage = () => {
             <div className="header">Microsoft Windows Updated!</div>
             <div className="content">
               Your copy of Microsoft Windows has been updated successfully.
-              Click "OK" to confirm your update.
+              Click OK to confirm your update.
               <div className="ok-cancel">
                 <label htmlFor="update-input" className="windows-box-shadow">
                   OK

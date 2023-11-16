@@ -437,7 +437,7 @@ const WindowsPage = () => {
                   </p>
                 </div>
                 <div className="topic-2-content">
-                  <h2>Why can't I move windows?</h2>
+                  <h2>Why cant I move windows?</h2>
                   <p>
                     Although CSS lets you do quite a lot of things,
                     unhtmlFortunately drag and drop is not one of them. To
@@ -452,7 +452,7 @@ const WindowsPage = () => {
                   </p>
                 </div>
                 <div className="topic-3-content">
-                  <h2>Why can't I move windows?</h2>
+                  <h2>Why cant I move windows?</h2>
                   <p>
                     Creating Windows in CSS is quite difficult, and requires a
                     lot of input elements. Therefore, it may be recommended that

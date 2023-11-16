@@ -10,7 +10,7 @@
 
 /* find animation that wont mess with the rest of the page */
 @keyframes glitchy {
-  /* 0% {
+  0% {
     margin-right: 5px;
   }
   25% {
@@ -24,7 +24,7 @@
   }
   100% {
     margin-left: 5px;
-  } */
+  }
 }
 
 .glitchy {

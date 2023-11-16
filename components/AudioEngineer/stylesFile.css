@@ -14,7 +14,7 @@ body {
   height: 2.5rem;
   position: absolute;
   bottom: 0;
-  width: calc(100% - 1rem);
+  width: 100%;
   display: flex;
   padding: 0.5rem;
   z-index: 999999999;
@@ -29,7 +29,7 @@ body {
   width: 100%;
   z-index: 99999999;
   pointer-events: none;
-  height: 100%;
+  height: 9%;
 }
 #all-windows > div {
   pointer-events: all;

@@ -1,4 +1,6 @@
-import React from "react";
+"use-client"
+
+import React, {useState} from "react";
 import { Container, BottomBar } from "./styles";
 import windowsIcon from "../../public/assets/start-button.png";
 import "./stylesFile.css";
@@ -173,7 +175,7 @@ const WindowsPage = () => {
                 alt="Windows"
               />
               <div className="select-box inverse-windows-box-shadow">
-                <input type="radio" name="users" id="zark-muckerberg" checked />
+                <input type="radio" name="users" id="zark-muckerberg" default />
                 <input type="radio" name="users" id="donald-trump" />
                 <input type="radio" name="users" id="spiderman" />
                 <label htmlFor="zark-muckerberg" id="zark-muckerberg-label">
@@ -215,7 +217,43 @@ const WindowsPage = () => {
                 alt=""
               />{" "}
             </div>
-            <div className="text">Documents</div>
+            <div className="text">Saint Lavender: More Time</div>
+          </label>
+          <label htmlFor="windows-documents-input" className="desktop-item">
+            <div className="icon">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAIVBMVEUAAACAgIDAwMAAAAD///8AgID//wAA//8AAP8AAICAgABjy1kBAAAAAXRSTlMAQObYZgAAAAFiS0dEBI9o2VEAAAAHdElNRQfiBhgXAzSeRYh6AAABI0lEQVQ4y6XUwWrCQBAG4OQRmiy9uwmB3qJbvHcZ3fQBSs/mGYTVaxB6Flr6AHvzKZ3ZTQJJZgvS/6T5+XBmFJPkX0ljRVZHABR8IUDXPIA5SZ8oAosZoUfwBvAxI+m+wgjY2cuUiBZzAPg8niZkBEc7JSOw1hChQUIxAmMNklecpB5EANacaRd87waBA38ZY+03dKC3VeV6geDSoDhDU3oyCEEPfgNoiPQCQQfwHkBHpBdCvmRSyp+rvPpXeuuGA06TFa4/4CxrrfDrbJfJS7zYc7VMXuLFOFFIPHLKiCLTWDDisJE1K1Yb/HBOtGsclx1L0UnYRVxE5DFBt+IX8QW3iIqIlYqIlgp+kSQy1uPC/0q4sULxuLgt44tELRP5i/gzd7p32fYC8TrqAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTA2LTI0VDIzOjAzOjUyLTA0OjAwbzzW+wAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0wNi0yNFQyMzowMzo1Mi0wNDowMB5hbkcAAAAASUVORK5CYII="
+                alt=""
+              />{" "}
+            </div>
+            <div className="text">Saint Lavender: Lost & Found & Free</div>
+          </label>
+          <label htmlFor="windows-documents-input" className="desktop-item">
+            <div className="icon">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAIVBMVEUAAACAgIDAwMAAAAD///8AgID//wAA//8AAP8AAICAgABjy1kBAAAAAXRSTlMAQObYZgAAAAFiS0dEBI9o2VEAAAAHdElNRQfiBhgXAzSeRYh6AAABI0lEQVQ4y6XUwWrCQBAG4OQRmiy9uwmB3qJbvHcZ3fQBSs/mGYTVaxB6Flr6AHvzKZ3ZTQJJZgvS/6T5+XBmFJPkX0ljRVZHABR8IUDXPIA5SZ8oAosZoUfwBvAxI+m+wgjY2cuUiBZzAPg8niZkBEc7JSOw1hChQUIxAmMNklecpB5EANacaRd87waBA38ZY+03dKC3VeV6geDSoDhDU3oyCEEPfgNoiPQCQQfwHkBHpBdCvmRSyp+rvPpXeuuGA06TFa4/4CxrrfDrbJfJS7zYc7VMXuLFOFFIPHLKiCLTWDDisJE1K1Yb/HBOtGsclx1L0UnYRVxE5DFBt+IX8QW3iIqIlYqIlgp+kSQy1uPC/0q4sULxuLgt44tELRP5i/gzd7p32fYC8TrqAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTA2LTI0VDIzOjAzOjUyLTA0OjAwbzzW+wAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0wNi0yNFQyMzowMzo1Mi0wNDowMB5hbkcAAAAASUVORK5CYII="
+                alt=""
+              />{" "}
+            </div>
+            <div className="text">Alec Kosla: Qualms</div>
+          </label>
+          <label htmlFor="windows-documents-input" className="desktop-item">
+            <div className="icon">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAIVBMVEUAAACAgIDAwMAAAAD///8AgID//wAA//8AAP8AAICAgABjy1kBAAAAAXRSTlMAQObYZgAAAAFiS0dEBI9o2VEAAAAHdElNRQfiBhgXAzSeRYh6AAABI0lEQVQ4y6XUwWrCQBAG4OQRmiy9uwmB3qJbvHcZ3fQBSs/mGYTVaxB6Flr6AHvzKZ3ZTQJJZgvS/6T5+XBmFJPkX0ljRVZHABR8IUDXPIA5SZ8oAosZoUfwBvAxI+m+wgjY2cuUiBZzAPg8niZkBEc7JSOw1hChQUIxAmMNklecpB5EANacaRd87waBA38ZY+03dKC3VeV6geDSoDhDU3oyCEEPfgNoiPQCQQfwHkBHpBdCvmRSyp+rvPpXeuuGA06TFa4/4CxrrfDrbJfJS7zYc7VMXuLFOFFIPHLKiCLTWDDisJE1K1Yb/HBOtGsclx1L0UnYRVxE5DFBt+IX8QW3iIqIlYqIlgp+kSQy1uPC/0q4sULxuLgt44tELRP5i/gzd7p32fYC8TrqAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTA2LTI0VDIzOjAzOjUyLTA0OjAwbzzW+wAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0wNi0yNFQyMzowMzo1Mi0wNDowMB5hbkcAAAAASUVORK5CYII="
+                alt=""
+              />{" "}
+            </div>
+            <div className="text">Trey Campbell: Focal Points</div>
+          </label>
+          <label htmlFor="windows-documents-input" className="desktop-item">
+            <div className="icon">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAIVBMVEUAAACAgIDAwMAAAAD///8AgID//wAA//8AAP8AAICAgABjy1kBAAAAAXRSTlMAQObYZgAAAAFiS0dEBI9o2VEAAAAHdElNRQfiBhgXAzSeRYh6AAABI0lEQVQ4y6XUwWrCQBAG4OQRmiy9uwmB3qJbvHcZ3fQBSs/mGYTVaxB6Flr6AHvzKZ3ZTQJJZgvS/6T5+XBmFJPkX0ljRVZHABR8IUDXPIA5SZ8oAosZoUfwBvAxI+m+wgjY2cuUiBZzAPg8niZkBEc7JSOw1hChQUIxAmMNklecpB5EANacaRd87waBA38ZY+03dKC3VeV6geDSoDhDU3oyCEEPfgNoiPQCQQfwHkBHpBdCvmRSyp+rvPpXeuuGA06TFa4/4CxrrfDrbJfJS7zYc7VMXuLFOFFIPHLKiCLTWDDisJE1K1Yb/HBOtGsclx1L0UnYRVxE5DFBt+IX8QW3iIqIlYqIlgp+kSQy1uPC/0q4sULxuLgt44tELRP5i/gzd7p32fYC8TrqAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTA2LTI0VDIzOjAzOjUyLTA0OjAwbzzW+wAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0wNi0yNFQyMzowMzo1Mi0wNDowMB5hbkcAAAAASUVORK5CYII="
+                alt=""
+              />{" "}
+            </div>
+            <div className="text">The Commodore Trio: ???</div>
           </label>
           <label htmlFor="windows-notepad-input" className="desktop-item">
             <div className="icon">
@@ -299,7 +337,7 @@ const WindowsPage = () => {
               <input
                 type="text"
                 className="inverse-windows-box-shadow"
-                value="https://fjolt.com/"
+                defaultValue="https://fjolt.com/"
               />
             </div>
             <div className="content">
@@ -331,11 +369,11 @@ const WindowsPage = () => {
               <input
                 type="text"
                 className="inverse-windows-box-shadow"
-                value="General Help"
+                defaultValue="General Help"
               />
             </div>
             <div className="tab-box-content">
-              <input name="topics-radio" id="topic-1" type="radio" checked />
+              <input name="topics-radio" id="topic-1" type="radio" default />
               <input name="topics-radio" id="topic-2" type="radio" />
               <input name="topics-radio" id="topic-3" type="radio" />
               <input name="topics-radio" id="topic-4" type="radio" />

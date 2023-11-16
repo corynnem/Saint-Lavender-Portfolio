@@ -175,7 +175,12 @@ const WindowsPage = () => {
                 alt="Windows"
               />
               <div className="select-box inverse-windows-box-shadow">
-                <input type="radio" name="users" id="zark-muckerberg" default />
+                <input
+                  type="radio"
+                  name="users"
+                  id="zark-muckerberg"
+                  defaultChecked
+                />
                 <input type="radio" name="users" id="donald-trump" />
                 <input type="radio" name="users" id="spiderman" />
                 <label htmlFor="zark-muckerberg" id="zark-muckerberg-label">

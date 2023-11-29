@@ -6,6 +6,7 @@ import windowsIcon from "../../public/assets/start-button.png";
 import "./stylesFile.css";
 
 const WindowsPage = () => {
+  // const [project, setProject] = useState("");
   return (
     <Container>
       <form id="windows" className="msssFont">

@@ -1,8 +1,8 @@
 "use-client";
-
 import React from "react";
+import withNoSSR from "../../../withNoSSR";
 import { Box } from "@mui/material";
-import PoetryArchive from "Poet/PoetryArchive";
+import PoetryArchive from "../../../components/Poet";
 
 const Poet = () => {
   return (
@@ -12,4 +12,4 @@ const Poet = () => {
   );
 };
 
-export default Poet;
+export default withNoSSR(Poet);

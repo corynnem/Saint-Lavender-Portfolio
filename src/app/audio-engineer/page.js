@@ -1,9 +1,9 @@
 "use-client";
 import React from "react";
-import WindowsPage from "../../../components/AudioEngineer/WindowsPage";
+import AudioEngineer from "../../../components/AudioEngineer/AudioEngineer";
 import { Box } from "@mui/material";
 
-const AudioEngineer = () => {
+const AudioEngineerPage = () => {
   return (
     <Box>
       <WindowsPage />
@@ -11,4 +11,4 @@ const AudioEngineer = () => {
   );
 };
 
-export default AudioEngineer;
+export default AudioEngineerPage;

@@ -1,6 +1,5 @@
 "use-client";
-
-import React, { useState } from "react";
+// import { useState } from "react";
 import { Container, BottomBar } from "./styles";
 import windowsIcon from "../../public/assets/start-button.png";
 import "./stylesFile.css";
